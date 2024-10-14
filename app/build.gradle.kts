@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.dagger.hilt.android)
+    alias(libs.plugins.jetbrains.kotlin.kapt)
 }
 
 android {
@@ -37,6 +39,13 @@ android {
     buildFeatures{
         viewBinding = true
     }
+
+    hilt{
+        enableAggregatingTask = true
+    }
+//    kotlin{
+//        jvmToolchain(8)
+//    }
 }
 
 dependencies {
@@ -44,6 +53,9 @@ dependencies {
     //NavComponent
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
+    //DaggerHilt
+    implementation(libs.hilt.android)
+    kapt(libs.dagger.hilt.compiler)
 
 
     implementation(libs.androidx.core.ktx)

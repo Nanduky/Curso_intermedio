@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.nanduky.horsocappactivity.databinding.FragmentLackBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-class LackFragment : Fragment() {
+@AndroidEntryPoint
+class LuckFragment : Fragment() {
 
     private var _binding: FragmentLackBinding? = null
     private val binding get() = _binding!!

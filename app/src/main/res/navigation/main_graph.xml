@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_palmistry" />
     <fragment
         android:id="@+id/luckFragment"
-        android:name="com.nanduky.horsocappactivity.UI.luck.LackFragment"
+        android:name="com.nanduky.horsocappactivity.UI.luck.LuckFragment"
         android:label="fragment_lack"
         tools:layout="@layout/fragment_lack" />
 </navigation>
